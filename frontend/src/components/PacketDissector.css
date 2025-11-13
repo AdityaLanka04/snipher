@@ -1,0 +1,119 @@
+.packet-dissector {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #3a3a3a;
+}
+
+.dissector-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #2a2a2a;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.dissector-header h3 {
+  color: #4a9eff;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.dissection-tree {
+  max-height: 600px;
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+}
+
+.dissection-node {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.node-header {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.node-header:hover {
+  background: #252525;
+}
+
+.node-header.header {
+  background: #2a2a2a;
+  font-weight: 600;
+  color: #4a9eff;
+}
+
+.node-header.field {
+  color: #e0e0e0;
+}
+
+.node-header.warning {
+  color: #ffa94a;
+  background: rgba(255, 169, 74, 0.1);
+}
+
+.node-header.error {
+  color: #ff4a4a;
+  background: rgba(255, 74, 74, 0.1);
+}
+
+.node-expand {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  color: #888;
+}
+
+.node-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.node-name {
+  color: inherit;
+}
+
+.node-value {
+  color: #4aff88;
+  margin-left: 0.5rem;
+}
+
+.warning-icon {
+  color: #ffa94a;
+}
+
+.error-icon {
+  color: #ff4a4a;
+}
+
+.node-children {
+  border-left: 2px solid #3a3a3a;
+  margin-left: 10px;
+}
+
+.depth-0 .node-header {
+  padding-left: 0.5rem;
+}
+
+.depth-1 .node-header {
+  padding-left: 1.5rem;
+}
+
+.depth-2 .node-header {
+  padding-left: 2.5rem;
+}
+
+.depth-3 .node-header {
+  padding-left: 3.5rem;
+}
+
+.depth-4 .node-header {
+  padding-left: 4.5rem;
+}

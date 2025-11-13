@@ -1,0 +1,53 @@
+.timeline {
+  background: #1f1f1f;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.timeline h3 {
+  color: #4a9eff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 120px;
+  background: #252525;
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.timeline-bar {
+  flex: 1;
+  min-width: 4px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.timeline-bar:hover {
+  transform: scaleY(1.05);
+}
+
+.timeline-bar-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, #4a9eff, #4aff88);
+  border-radius: 2px 2px 0 0;
+}
+
+.timeline-labels {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #888;
+}
